@@ -1,0 +1,58 @@
+﻿:root {
+    --card-bg: #ffffff;
+    --primary-color: #2563eb;
+    --text-primary: #0f172a;
+    --muted-color: #6b7280;
+    --danger-color: #dc2626;
+    --radius: 8px;
+    --shadow: 0 6px 18px rgba(17,24,39,0.06);
+    --gap: 10px;
+    --font-family: Arial, sans-serif;
+}
+
+.about-container {
+    max-width: 75%;
+    margin: 2% auto;
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+}
+
+h1 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    border: 1px solid #ccc;
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+    resize: vertical;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+    button:hover {
+        background-color: rgba(37, 99, 235, 0.8);
+    }

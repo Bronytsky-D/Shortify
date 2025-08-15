@@ -1,0 +1,17 @@
+﻿@page "/About"
+@using Microsoft.AspNetCore.Authorization
+@model Shortify.About.Pages.AboutModel
+<link rel="stylesheet" href="~/css/about.css" />
+<div class="about-container">
+    <h1>About URL Shortening Algorithm</h1>
+
+    <p>@Model.Description</p>
+
+    @if (Model.IsAdmin)
+    {
+        <form method="post">
+            <textarea asp-for="Description" rows="10"></textarea><br />
+            <button type="submit">Save</button>
+        </form>
+    }
+</div>
